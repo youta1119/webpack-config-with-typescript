@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "moduleResolution": "node"
+    "module": "commonjs"
   }
 }

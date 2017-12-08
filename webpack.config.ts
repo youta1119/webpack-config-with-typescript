@@ -4,7 +4,7 @@ import * as HtmlWebpackPlugin from "html-webpack-plugin";
 
 interface Config extends webpack.Configuration {
   module: {
-    rules: webpack.NewUseRule[]
+    rules: NewUseRule[]
   };
 }
 interface NewUseRule extends webpack.NewUseRule {
@@ -27,7 +27,7 @@ const config: Config = {
     filename: "bundle.js"
   },
   resolve: {
-    extensions: [".ts", ".js", ".json"]
+    extensions: [".ts"]
   },
   module: { rules },
   plugins: [
@@ -44,4 +44,4 @@ const config: Config = {
   devtool: "inline-source-map"
 };
 
-module.exports = config; 
+export default config;

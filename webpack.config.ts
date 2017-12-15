@@ -27,7 +27,7 @@ const config: Config = {
     filename: "bundle.js"
   },
   resolve: {
-    extensions: [".ts"]
+    extensions: [".ts",".js"]
   },
   module: { rules },
   plugins: [
@@ -38,8 +38,7 @@ const config: Config = {
     })
   ],
   devServer: {
-    inline: true,
-    contentBase: path.join(__dirname, "./dist")
+    inline: true
   },
   devtool: "inline-source-map"
 };
